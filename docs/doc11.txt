@@ -1,0 +1,6 @@
+Problem: API Gateway returns a 500 Internal Server Error.
+Solution:
+1. Check CloudWatch Logs for the Lambda function to identify the error.
+2. Ensure the Lambda function returns a valid JSON response (e.g., { "statusCode": 200, "body": "..." }).
+3. Verify the integration settings in API Gateway (e.g., Lambda proxy integration).
+4. Confirm the Lambda function has sufficient memory and timeout settings.

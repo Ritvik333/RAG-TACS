@@ -1,0 +1,6 @@
+Problem: S3 bucket policy is not granting or denying access as expected.
+Solution:
+1. Check the policy syntax for errors using the AWS Policy Editor.
+2. Ensure the ARN in the policy matches the bucket name (e.g., arn:aws:s3:::bucket-name/*).
+3. Verify the Principal (e.g., IAM role ARN) is correct and exists.
+4. Test the policy with the AWS Policy Simulator to debug permissions.

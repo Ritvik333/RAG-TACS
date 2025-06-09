@@ -1,0 +1,6 @@
+Problem: S3 upload fails with an Invalid Signature error.
+Solution:
+1. Ensure your AWS credentials (access key/secret key) are correct and not expired.
+2. Check the system clock on your machine; a time skew can cause signature issues.
+3. Verify the region in your S3 client matches the bucket's region (e.g., us-east-1).
+4. If using temporary credentials, ensure the session token is included in the request.

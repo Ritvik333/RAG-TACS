@@ -1,0 +1,6 @@
+Problem: CloudFront distribution returns a 403 Access Denied error.
+Solution:
+1. Verify the S3 bucket policy allows the CloudFront Origin Access Identity (OAI) to access objects.
+2. Ensure the OAI is correctly configured in the CloudFront distribution settings.
+3. Check that the S3 bucket objects are not encrypted with a key CloudFront can't access.
+4. Confirm the default root object is set to index.html in CloudFront settings.

@@ -1,0 +1,6 @@
+Problem: CloudFront serves outdated content after updating S3 files.
+Solution:
+1. Create an invalidation in CloudFront to refresh the cache (e.g., /* for all files).
+2. Adjust the TTL settings in CloudFront to reduce caching duration.
+3. Ensure the updated files are uploaded to the correct S3 bucket and path.
+4. Verify the CloudFront distribution has finished deploying after changes.

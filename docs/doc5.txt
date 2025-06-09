@@ -1,0 +1,6 @@
+Problem: Lambda function times out after the default 3 seconds.
+Solution:
+1. Increase the timeout setting in the Lambda configuration (e.g., to 15 seconds).
+2. Check for network latency if the function accesses external services (e.g., DynamoDB, S3).
+3. Ensure the function is in a VPC with access to required resources via NAT Gateway.
+4. Optimize the function code to reduce execution time (e.g., cache connections).

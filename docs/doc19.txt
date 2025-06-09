@@ -1,0 +1,6 @@
+Problem: SageMaker endpoint returns a 500 Model Error during inference.
+Solution:
+1. Check the input data format matches what the model expects (e.g., JSON structure).
+2. Review the inference script (e.g., inference.py) for errors in predict_fn or input_fn.
+3. Verify the model was packaged correctly and uploaded to S3.
+4. Check CloudWatch Logs for the endpoint to debug the model execution.

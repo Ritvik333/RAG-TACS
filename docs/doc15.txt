@@ -1,0 +1,6 @@
+Problem: DynamoDB items are not expiring despite TTL being enabled.
+Solution:
+1. Verify the TTL attribute (e.g., timestamp) is in Unix epoch time format (seconds).
+2. Ensure TTL is enabled on the table and the correct attribute is specified.
+3. Wait up to 48 hours, as TTL deletions are not immediate.
+4. Check CloudWatch Logs for any TTL-related errors or misconfigurations.

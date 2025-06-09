@@ -1,0 +1,6 @@
+Problem: Lambda function fails to connect to DynamoDB (e.g., timeout or access denied).
+Solution:
+1. Ensure the Lambda function is in the same VPC as the DynamoDB Interface Endpoint.
+2. Verify the security group allows outbound HTTPS (port 443) to DynamoDB.
+3. Check the IAM role for dynamodb:Scan or dynamodb:GetItem permissions.
+4. Confirm the DynamoDB endpoint URL is correct (e.g., https://dynamodb.us-east-1.amazonaws.com).

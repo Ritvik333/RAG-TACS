@@ -1,0 +1,6 @@
+Problem: DynamoDB Scan operation returns no items despite data existing.
+Solution:
+1. Verify the table name and region are correct in the request.
+2. Check for any FilterExpression that might exclude all items.
+3. Ensure the IAM role has dynamodb:Scan permission for the table.
+4. If using pagination, ensure you're handling the LastEvaluatedKey correctly.

@@ -1,0 +1,115 @@
+/* styles.css */
+#chat-container {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#messages p {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#messages p strong {
+    color: #333;
+}
+
+/* Remove nth-child styling as we'll use specific classes */
+#messages p.user {
+    background-color: #e6f3ff;
+    text-align: left;
+}
+
+#messages p.error {
+    background-color: #ffcccb;
+    text-align: left;
+}
+
+#messages p.bot-message {
+    background-color: #e8f5e9;
+    text-align: left;
+    border-left: 4px solid #28a745;
+    padding: 10px;
+}
+
+#messages p.bot-message .context {
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 3px;
+    margin: 5px 0;
+    font-style: italic;
+    white-space: pre-wrap; /* Preserve formatting */
+}
+
+#messages p.bot-message .response {
+    padding: 8px 0;
+    white-space: pre-wrap; /* Preserve formatting */
+}
+
+#loading {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#user-input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.bot-message-box {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+    margin-top: 10px;
+}
+
+.bot-message-box h4 {
+    margin: 5px 0;
+    color: #1b5e20;
+}
+
+.context-box, .response-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    white-space: pre-wrap;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,6 @@
+Problem: API Gateway CORS error (No 'Access-Control-Allow-Origin' header).
+Solution:
+1. Enable CORS in the API Gateway console for the /chat resource.
+2. Add OPTIONS method to the resource and configure it with a 200 response.
+3. Ensure the Lambda function returns CORS headers (e.g., Access-Control-Allow-Origin: *).
+4. Redeploy the API to the prod stage after making changes.

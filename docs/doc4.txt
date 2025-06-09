@@ -1,0 +1,6 @@
+Problem: DynamoDB returns ResourceNotFoundException when accessing a table.
+Solution:
+1. Verify the table name is correct and matches the case (e.g., DocumentEmbeddings).
+2. Check the AWS region; ensure you're accessing the table in the correct region (e.g., us-east-1).
+3. Confirm the table exists in the DynamoDB console or CLI.
+4. Ensure the IAM role has dynamodb:DescribeTable and dynamodb:GetItem permissions.

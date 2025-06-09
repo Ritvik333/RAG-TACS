@@ -1,0 +1,6 @@
+Problem: DynamoDB throws ProvisionedThroughputExceededException during reads or writes.
+Solution:
+1. Switch to on-demand capacity mode if using provisioned capacity.
+2. Increase read/write capacity units (RCU/WCU) if using provisioned mode.
+3. Implement exponential backoff in your application to retry requests.
+4. Analyze CloudWatch metrics to identify hot partitions and redistribute data.

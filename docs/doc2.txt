@@ -1,0 +1,6 @@
+Problem: S3 static website hosting endpoint returns 404 or 403 errors.
+Solution:
+1. Verify that static website hosting is enabled and the index document is set to index.html.
+2. Check the bucket policy to allow public read access if needed.
+3. Ensure the correct region is used in the endpoint URL (e.g., bucket-name.s3-website-us-east-1.amazonaws.com).
+4. Confirm that the files (e.g., index.html) are uploaded and publicly accessible.

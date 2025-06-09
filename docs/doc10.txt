@@ -1,0 +1,6 @@
+Problem: API Gateway returns a 403 Forbidden error when invoked.
+Solution:
+1. Ensure the API Gateway resource policy allows the invoking client (e.g., IP or IAM role).
+2. Verify CORS is enabled if the request is from a browser (e.g., CloudFront).
+3. Check the Lambda function permissions to allow API Gateway invocation.
+4. Confirm the API is deployed to the correct stage (e.g., prod).

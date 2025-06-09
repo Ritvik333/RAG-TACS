@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-container">
+        <h2>Tech Support Chatbot</h2>
+        <div id="messages"></div>
+        <div id="loading" style="display: none;"><p><em>Bot is typing...</em></p></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

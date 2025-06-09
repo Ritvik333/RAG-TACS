@@ -1,0 +1,17 @@
+# Base image: Use the same PyTorch inference container
+FROM 763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-inference:2.6.0-cpu-py312-ubuntu22.04-sagemaker
+
+# Install transformers library
+RUN pip install transformers==4.38.2 --no-cache-dir
+
+# Optional: Install additional dependencies if needed
+# RUN pip install torch torchvision  # Already included, but can verify
+
+# Set working directory
+WORKDIR /opt/ml/model
+
+# Copy inference code (optional, can be in the model tarball instead)
+# COPY inference.py .
+
+# Ensure the entrypoint remains the same as the base image
+CMD ["serve"]

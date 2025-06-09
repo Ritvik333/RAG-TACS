@@ -1,0 +1,6 @@
+Problem: Invoking a SageMaker endpoint results in a timeout error.
+Solution:
+1. Ensure the SageMaker endpoint is in a private subnet with a NAT Gateway for outbound traffic.
+2. Verify the security group allows inbound HTTPS (port 443) from the Lambda function.
+3. Check the endpoint status in the SageMaker console (should be "InService").
+4. Increase the timeout in the Lambda function invoking the endpoint.

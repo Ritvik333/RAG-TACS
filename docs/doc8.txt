@@ -1,0 +1,6 @@
+Problem: SageMaker endpoint creation fails with a generic error.
+Solution:
+1. Check the IAM role for permissions to access S3 (for model data) and CloudWatch.
+2. Verify the model data (.tar.gz) exists in the S3 bucket and is accessible.
+3. Ensure the SageMaker instance type (e.g., ml.t3.medium) is available in your region.
+4. Review CloudWatch Logs for detailed error messages (e.g., container issues).

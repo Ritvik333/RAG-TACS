@@ -1,0 +1,6 @@
+Problem: S3 Access Denied Error (403) when accessing objects.
+Solution:
+1. Check the S3 bucket policy to ensure the IAM role or user has s3:GetObject permission.
+2. Verify that Block Public Access settings are not overly restrictive if the object needs to be public.
+3. Ensure the correct ARN is specified in the policy (e.g., arn:aws:s3:::bucket-name/*).
+4. If using CloudFront, confirm the Origin Access Identity (OAI) is correctly configured.

@@ -1,0 +1,6 @@
+Problem: Lambda function gets Access Denied when accessing S3.
+Solution:
+1. Verify the IAM role has s3:GetObject permission for the bucket.
+2. Check the S3 bucket policy to allow access from the Lambda role.
+3. If using a VPC, ensure an S3 Gateway Endpoint is configured in the VPC.
+4. Confirm the bucket name and object key are correct in the Lambda code.

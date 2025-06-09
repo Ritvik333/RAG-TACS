@@ -1,0 +1,16 @@
+# Ignore numpy-related binary folders
+/chatbot-lambda/bin/
+/chatbot-lambda/numpy/
+/chatbot-lambda/numpy-1.26.4.dist-info/
+/chatbot-lambda/numpy.libs/
+
+# Ignore zip files and other build artifacts
+*.zip
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+
+# Ignore OS-generated files
+.DS_Store
